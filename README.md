@@ -1,6 +1,7 @@
 # 혼합계산 연습기 (Mixed Calculation Practice)
 
-Interactive web application for practicing mixed arithmetic operations.
+Interactive application for practicing mixed arithmetic operations.
+Available in both web browser and command-line (Python) versions!
 
 ## Features
 
@@ -16,12 +17,36 @@ Interactive web application for practicing mixed arithmetic operations.
 
 ## How to Use
 
+### Web Version (Browser)
+
 1. Open `index.html` in your web browser
 2. Select your preferred difficulty level
 3. Choose which operations you want to practice
 4. Solve the problems and enter your answer
 5. Press Enter or click "제출" (Submit) to check your answer
 6. Track your progress with the statistics display
+
+### Python Version (Terminal/Command Line)
+
+1. Run the Python script:
+   ```bash
+   python3 calculator_practice.py
+   ```
+   or
+   ```bash
+   ./calculator_practice.py
+   ```
+
+2. Main menu options:
+   - **문제 풀기** (Practice): Start solving problems
+   - **설정** (Settings): Change difficulty and operators
+   - **통계 초기화** (Reset Stats): Clear your statistics
+   - **종료** (Exit): Quit the program
+
+3. While practicing:
+   - Enter your answer as a number
+   - Type `skip` to skip the current problem
+   - Type `menu` to return to the main menu
 
 ## Features Explained
 
@@ -37,9 +62,14 @@ Interactive web application for practicing mixed arithmetic operations.
 
 ## Technologies Used
 
+### Web Version
 - HTML5
 - CSS3 (with Flexbox and responsive design)
 - Vanilla JavaScript
+
+### Python Version
+- Python 3.x
+- Standard library only (no external dependencies required)
 
 ## License
 
