@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>혼합계산 연습기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧮 혼합계산 연습기</h1>
+
+        <div class="settings">
+            <div class="setting-group">
+                <label for="difficulty">난이도:</label>
+                <select id="difficulty">
+                    <option value="easy">쉬움 (1-10)</option>
+                    <option value="medium" selected>보통 (1-50)</option>
+                    <option value="hard">어려움 (1-100)</option>
+                </select>
+            </div>
+
+            <div class="setting-group">
+                <label>연산자:</label>
+                <div class="operator-checkboxes">
+                    <label><input type="checkbox" id="op-add" checked> + 더하기</label>
+                    <label><input type="checkbox" id="op-subtract" checked> - 빼기</label>
+                    <label><input type="checkbox" id="op-multiply" checked> × 곱하기</label>
+                    <label><input type="checkbox" id="op-divide" checked> ÷ 나누기</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-label">맞은 문제:</span>
+                <span id="correct" class="stat-value">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">틀린 문제:</span>
+                <span id="incorrect" class="stat-value">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">정답률:</span>
+                <span id="accuracy" class="stat-value">0%</span>
+            </div>
+        </div>
+
+        <div class="problem-container">
+            <div id="problem" class="problem"></div>
+            <div class="answer-section">
+                <input type="number" id="answer" placeholder="답을 입력하세요" autofocus>
+                <button id="submit-btn" class="btn btn-primary">제출</button>
+                <button id="skip-btn" class="btn btn-secondary">건너뛰기</button>
+            </div>
+            <div id="feedback" class="feedback"></div>
+        </div>
+
+        <div class="controls">
+            <button id="new-problem-btn" class="btn btn-success">새 문제</button>
+            <button id="reset-btn" class="btn btn-danger">통계 초기화</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
